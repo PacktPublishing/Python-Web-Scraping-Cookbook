@@ -1,0 +1,2 @@
+#!/bin/bash
+echo ECS_CLUSTER=scraper-cluster >> /etc/ecs/ecs.config

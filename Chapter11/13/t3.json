@@ -1,0 +1,31 @@
+{
+    "taskDefinition": {
+        "requiresAttributes": [
+            {
+                "name": "com.amazonaws.ecs.capability.ecr-auth"
+            }
+        ],
+        "revision": 3,
+        "family": "rabbitmq2",
+        "memory": "128",
+        "volumes": [],
+        "status": "ACTIVE",
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:414704166289:task-definition/rabbitmq:3",
+        "containerDefinitions": [
+            {
+                "portMappings": [],
+                "cpu": 0,
+                "essential": true,
+                "environment": [],
+                "name": "rabbitmq",
+                "volumesFrom": [],
+                "mountPoints": [],
+                "image": "414704166289.dkr.ecr.us-west-2.amazonaws.com/rabbitmq"
+            }
+        ],
+        "compatibilities": [
+            "EC2"
+        ],
+        "placementConstraints": []
+    }
+}

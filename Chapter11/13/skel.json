@@ -1,0 +1,127 @@
+{
+    "family": "",
+    "taskRoleArn": "",
+    "executionRoleArn": "",
+    "networkMode": "host",
+    "containerDefinitions": [
+        {
+            "name": "",
+            "image": "",
+            "cpu": 0,
+            "memory": 0,
+            "memoryReservation": 0,
+            "links": [
+                ""
+            ],
+            "portMappings": [
+                {
+                    "containerPort": 0,
+                    "hostPort": 0,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "entryPoint": [
+                ""
+            ],
+            "command": [
+                ""
+            ],
+            "environment": [
+                {
+                    "name": "",
+                    "value": ""
+                }
+            ],
+            "mountPoints": [
+                {
+                    "sourceVolume": "",
+                    "containerPath": "",
+                    "readOnly": true
+                }
+            ],
+            "volumesFrom": [
+                {
+                    "sourceContainer": "",
+                    "readOnly": true
+                }
+            ],
+            "linuxParameters": {
+                "capabilities": {
+                    "add": [
+                        ""
+                    ],
+                    "drop": [
+                        ""
+                    ]
+                },
+                "devices": [
+                    {
+                        "hostPath": "",
+                        "containerPath": "",
+                        "permissions": [
+                            "write"
+                        ]
+                    }
+                ],
+                "initProcessEnabled": true
+            },
+            "hostname": "",
+            "user": "",
+            "workingDirectory": "",
+            "disableNetworking": true,
+            "privileged": true,
+            "readonlyRootFilesystem": true,
+            "dnsServers": [
+                ""
+            ],
+            "dnsSearchDomains": [
+                ""
+            ],
+            "extraHosts": [
+                {
+                    "hostname": "",
+                    "ipAddress": ""
+                }
+            ],
+            "dockerSecurityOptions": [
+                ""
+            ],
+            "dockerLabels": {
+                "KeyName": ""
+            },
+            "ulimits": [
+                {
+                    "name": "nproc",
+                    "softLimit": 0,
+                    "hardLimit": 0
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "KeyName": ""
+                }
+            }
+        }
+    ],
+    "volumes": [
+        {
+            "name": "",
+            "host": {
+                "sourcePath": ""
+            }
+        }
+    ],
+    "placementConstraints": [
+        {
+            "type": "memberOf",
+            "expression": ""
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "",
+    "memory": ""
+}

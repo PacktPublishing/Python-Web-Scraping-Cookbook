@@ -1,0 +1,157 @@
+{
+  "taskDefinition": {
+    "executionRoleArn": null,
+    "containerDefinitions": [
+      {
+        "dnsSearchDomains": null,
+        "logConfiguration": null,
+        "entryPoint": null,
+        "portMappings": [
+          {
+            "hostPort": 5672,
+            "protocol": "tcp",
+            "containerPort": 5672
+          },
+          {
+            "hostPort": 15672,
+            "protocol": "tcp",
+            "containerPort": 15672
+          }
+        ],
+        "command": null,
+        "linuxParameters": null,
+        "cpu": 0,
+        "environment": [],
+        "ulimits": null,
+        "dnsServers": null,
+        "mountPoints": [],
+        "workingDirectory": null,
+        "dockerSecurityOptions": null,
+        "memory": 256,
+        "memoryReservation": null,
+        "volumesFrom": [],
+        "image": "414704166289.dkr.ecr.us-west-2.amazonaws.com/rabbitmq",
+        "disableNetworking": null,
+        "essential": true,
+        "links": null,
+        "hostname": "rabbitmq",
+        "extraHosts": null,
+        "user": null,
+        "readonlyRootFilesystem": null,
+        "dockerLabels": null,
+        "privileged": null,
+        "name": "rabbitmq"
+      },
+      {
+        "dnsSearchDomains": null,
+        "logConfiguration": null,
+        "entryPoint": null,
+        "portMappings": [],
+        "command": null,
+        "linuxParameters": null,
+        "cpu": 0,
+        "environment": [
+          {
+            "name": "AMQP_URI",
+            "value": "pyamqp://guest:guest@rabbitmq"
+          }
+        ],
+        "ulimits": null,
+        "dnsServers": null,
+        "mountPoints": [],
+        "workingDirectory": null,
+        "dockerSecurityOptions": null,
+        "memory": 256,
+        "memoryReservation": null,
+        "volumesFrom": [],
+        "image": "414704166289.dkr.ecr.us-west-2.amazonaws.com/scraper-microservice",
+        "disableNetworking": null,
+        "essential": true,
+        "links": [
+          "rabbitmq"
+        ],
+        "hostname": null,
+        "extraHosts": null,
+        "user": null,
+        "readonlyRootFilesystem": null,
+        "dockerLabels": null,
+        "privileged": null,
+        "name": "scraper-microservice"
+      },
+      {
+        "dnsSearchDomains": null,
+        "logConfiguration": null,
+        "entryPoint": null,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "protocol": "tcp",
+            "containerPort": 8080
+          }
+        ],
+        "command": null,
+        "linuxParameters": null,
+        "cpu": 0,
+        "environment": [
+          {
+            "name": "AMPQ_URI",
+            "value": "pyamqp://guest:guest@rabbitmq"
+          },
+          {
+            "name": "ES_HOST",
+            "value": "https://elastic:tduhdExunhEWPjSuH73O6yLS@7dc72d3327076cc4daf5528103c46a27.us-west-2.aws.found.io:9243"
+          }
+        ],
+        "ulimits": null,
+        "dnsServers": null,
+        "mountPoints": [],
+        "workingDirectory": null,
+        "dockerSecurityOptions": null,
+        "memory": 128,
+        "memoryReservation": null,
+        "volumesFrom": [],
+        "image": "414704166289.dkr.ecr.us-west-2.amazonaws.com/scraper-rest-api",
+        "disableNetworking": null,
+        "essential": true,
+        "links": [
+          "rabbitmq"
+        ],
+        "hostname": "api",
+        "extraHosts": null,
+        "user": null,
+        "readonlyRootFilesystem": null,
+        "dockerLabels": null,
+        "privileged": null,
+        "name": "api"
+      }
+    ],
+    "placementConstraints": [],
+    "memory": "4096",
+    "taskRoleArn": null,
+    "compatibilities": [
+      "EC2"
+    ],
+    "taskDefinitionArn": "arn:aws:ecs:us-west-2:414704166289:task-definition/scraper-as-a-service:16",
+    "family": "scraper-as-a-service",
+    "requiresAttributes": [
+      {
+        "targetId": null,
+        "targetType": null,
+        "value": null,
+        "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+      },
+      {
+        "targetId": null,
+        "targetType": null,
+        "value": null,
+        "name": "com.amazonaws.ecs.capability.ecr-auth"
+      }
+    ],
+    "requiresCompatibilities": null,
+    "networkMode": null,
+    "cpu": "1024",
+    "revision": 16,
+    "status": "ACTIVE",
+    "volumes": []
+  }
+}

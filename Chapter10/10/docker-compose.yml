@@ -1,0 +1,34 @@
+version: '3'
+services:
+  api:
+    image: scraper-rest-api
+    ports:
+      - "8080:8080"
+    networks:
+      - scraper-compose-net
+
+  scraper:
+    image: scraping-microservice
+    depends_on:
+      - rabbitmq
+    networks:
+      - scraper-compose-net
+
+  elastic:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.1.1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - scraper-compose-net
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
+    networks:
+      - scraper-compose-net
+
+networks:
+  scraper-compose-net:
+    driver: bridge

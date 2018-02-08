@@ -1,0 +1,75 @@
+{
+    "family": "scraper-as-a-service",
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "4096",
+    "volumes": [],
+
+    "containerDefinitions": [
+        {
+            "name": "rabbitmq",
+            "image": "414704166289.dkr.ecr.us-west-2.amazonaws.com/rabbitmq",
+	        "hostname": "rabbitmq",
+            "cpu": 0,
+            "memory": 256,
+            "portMappings": [
+                {
+                    "containerPort": 15672,
+                    "hostPort": 15672,
+                    "protocol": "tcp"
+                },
+                {
+                    "containerPort": 5672,
+                    "hostPort": 5672,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true
+        },
+        {
+            "name": "scraper-microservice",
+            "image": "414704166289.dkr.ecr.us-west-2.amazonaws.com/scraper-microservice",
+            "cpu": 0,
+            "memory": 256,
+            "essential": true,
+            "environment": [
+                {
+                    "name": "AMQP_URI",
+                    "value": "pyamqp://guest:guest@rabbitmq"
+                }
+            ],
+            "links": [
+                "rabbitmq"
+            ]
+        },
+        {
+            "name": "api",
+            "image": "414704166289.dkr.ecr.us-west-2.amazonaws.com/scraper-rest-api",
+            "cpu": 0,
+            "memory": 128,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "environment": [
+                {
+                    "name": "AMQP_URI",
+                    "value": "pyamqp://guest:guest@rabbitmq"
+                },
+                {
+                    "name": "ES_HOST",
+                    "value": "https://elastic:tduhdExunhEWPjSuH73O6yLS@7dc72d3327076cc4daf5528103c46a27.us-west-2.aws.found.io:9243"
+                }
+            ],
+            "links": [
+                "rabbitmq"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "family": "scraper-as-a-service2",
+  "networkMode": null,
+  "cpu": "1024",
+  "volumes": [],
+  "placementConstraints": [],
+  "memory": "4096",
+  "taskRoleArn": null,
+
+  "containerDefinitions": [
+  ]
+}

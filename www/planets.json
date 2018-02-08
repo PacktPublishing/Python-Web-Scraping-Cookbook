@@ -1,0 +1,65 @@
+[
+    {
+        "Name": "Mercury",
+        "Mass": "0.330",
+        "Radius": "4879",
+        "Description": "Named Mercurius by the Romans because it appears to move so swiftly.",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+    },
+    {
+        "Name": "Venus",
+        "Mass": "4.87",
+        "Radius": "12104",
+        "Description": "Roman name for the goddess of love. This planet was considered to be the brightest and most beautiful planet or star in the heavens. Other civilizations have named it for their god or goddess of love/war.",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Venus"
+    },
+    {
+        "Name": "Earth",
+        "Mass": "5.97",
+        "Radius": "12756",
+        "Description": "The name Earth comes from the Indo-European base 'er,'which produced the Germanic noun 'ertho,' and ultimately German 'erde,' Dutch 'aarde,' Scandinavian 'jord,' and English 'earth.' Related forms include Greek 'eraze,' meaning 'on the ground,' and Welsh 'erw,' meaning 'a piece of land.'",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Earth"
+    },
+    {
+        "Name": "Mars",
+        "Mass": "0.642",
+        "Radius": "6792",
+        "Description": "Named by the Romans for their god of war because of its red, bloodlike color. Other civilizations also named this planet from this attribute; for example, the Egyptians named it \"Her Desher,\" meaning \"the red one.\"",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Mars"
+    },
+    {
+        "Name": "Jupiter",
+        "Mass": "1898",
+        "Radius": "142984",
+        "Description": "The largest and most massive of the planets was named Zeus by the Greeks and Jupiter by the Romans; he was the most important deity in both pantheons.",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Jupiter"
+    },
+    {
+        "Name": "Saturn",
+        "Mass": "568",
+        "Radius": "120536",
+        "Description": "Roman name for the Greek Cronos, father of Zeus/Jupiter. Other civilizations have given different names to Saturn, which is the farthest planet from Earth that can be observed by the naked human eye. Most of its satellites were named for Titans who, according to Greek mythology, were brothers and sisters of Saturn.",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Saturn"
+    },
+    {
+        "Name": "Uranus",
+        "Mass": "86.8",
+        "Radius": "51118",
+        "Description": "Several astronomers, including Flamsteed and Le Monnier, had observed Uranus earlier but had recorded it as a fixed star. Herschel tried unsuccessfully to name his discovery \"Georgian Sidus\" after George III; the planet was named by Johann Bode in 1781 after the ancient Greek deity of the sky Uranus, the father of Kronos (Saturn) and grandfather of Zeus (Jupiter).",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Uranus"
+    },
+    {
+        "Name": "Neptune",
+        "Mass": "102",
+        "Radius": "49528",
+        "Description": "Neptune was \"predicted\" by John Couch Adams and Urbain Le Verrier who, independently, were able to account for the irregularities in the motion of Uranus by correctly predicting the orbital elements of a trans- Uranian body. Using the predicted parameters of Le Verrier (Adams never published his predictions), Johann Galle observed the planet in 1846. Galle wanted to name the planet for Le Verrier, but that was not acceptable to the international astronomical community. Instead, this planet is named for the Roman god of the sea.",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Neptune"
+    },
+    {
+        "Name": "Pluto",
+        "Mass": "0.0146",
+        "Radius": "2370",
+        "Description": "Pluto was discovered at Lowell Observatory in Flagstaff, AZ during a systematic search for a trans-Neptune planet predicted by Percival Lowell and William H. Pickering. Named after the Roman god of the underworld who was able to render himself invisible.",
+        "MoreInfo": "https://en.wikipedia.org/wiki/Pluto"
+    }
+]

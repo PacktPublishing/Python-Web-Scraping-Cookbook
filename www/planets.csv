@@ -1,0 +1,26 @@
+Name,Mass,Radius,Description,MoreInfo
+Mercury,0.330,4879,Named Mercurius by the Romans because it appears to move so swiftly.,https://en.wikipedia.org/wiki/Mercury_(planet)
+Venus,4.87,12104,"Roman name for the goddess of love. This planet was considered to be the brightest and most beautiful planet or star in the
+                    heavens. Other civilizations have named it for their god or goddess of love/war.",https://en.wikipedia.org/wiki/Venus
+Earth,5.97,12756,"The name Earth comes from the Indo-European base 'er,'which produced the Germanic noun 'ertho,' and ultimately German 'erde,'
+                    Dutch 'aarde,' Scandinavian 'jord,' and English 'earth.' Related forms include Greek 'eraze,' meaning
+                    'on the ground,' and Welsh 'erw,' meaning 'a piece of land.'",https://en.wikipedia.org/wiki/Earth
+Mars,0.642,6792,"Named by the Romans for their god of war because of its red, bloodlike color. Other civilizations also named this planet
+                    from this attribute; for example, the Egyptians named it ""Her Desher,"" meaning ""the red one.""",https://en.wikipedia.org/wiki/Mars
+Jupiter,1898,142984,"The largest and most massive of the planets was named Zeus by the Greeks and Jupiter by the Romans; he was
+                    the most important deity in both pantheons.",https://en.wikipedia.org/wiki/Jupiter
+Saturn,568,120536,"Roman name for the Greek Cronos, father of Zeus/Jupiter. Other civilizations have given different names to Saturn, which
+                    is the farthest planet from Earth that can be observed by the naked human eye. Most of its satellites
+                    were named for Titans who, according to Greek mythology, were brothers and sisters of Saturn.",https://en.wikipedia.org/wiki/Saturn
+Uranus,86.8,51118,"Several astronomers, including Flamsteed and Le Monnier, had observed Uranus earlier but had recorded it as a fixed star.
+                    Herschel tried unsuccessfully to name his discovery ""Georgian Sidus"" after George III; the planet was
+                    named by Johann Bode in 1781 after the ancient Greek deity of the sky Uranus, the father of Kronos (Saturn)
+                    and grandfather of Zeus (Jupiter).",https://en.wikipedia.org/wiki/Uranus
+Neptune,102,49528,"Neptune was ""predicted"" by John Couch Adams and Urbain Le Verrier who, independently, were able to account for the irregularities
+                    in the motion of Uranus by correctly predicting the orbital elements of a trans- Uranian body. Using
+                    the predicted parameters of Le Verrier (Adams never published his predictions), Johann Galle observed
+                    the planet in 1846. Galle wanted to name the planet for Le Verrier, but that was not acceptable to the
+                    international astronomical community. Instead, this planet is named for the Roman god of the sea.",https://en.wikipedia.org/wiki/Neptune
+Pluto,0.0146,2370,"Pluto was discovered at Lowell Observatory in Flagstaff, AZ during a systematic search for a trans-Neptune planet predicted
+                    by Percival Lowell and William H. Pickering. Named after the Roman god of the underworld who was able
+                    to render himself invisible.",https://en.wikipedia.org/wiki/Pluto
