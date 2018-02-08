@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<catalog>
+   <book isbn="0596004206">
+      <author>Erik T. Ray</author>
+      <title>Learning XML: Creating Self-Describing Data</title>
+      <genre>Computer</genre>
+      <price>39.95</price>
+      <publish_date>2003-10-02</publish_date>
+      <description>This second edition of the bestselling Learning XML provides web developers with a concise but grounded understanding of XML (the Extensible Markup Language) and its potential-- not just a whirlwind tour of XML.The author explains the important and relevant XML technologies and their capabilities clearly and succinctly with plenty of real-life projects and useful examples. He outlines the elements of markup--demystifying concepts such as attributes, entities, and namespaces--and provides enough depth and examples to get started.</description>
+   </book>
+   <book isbn="0596007647">
+      <author>Elliotte Rusty Harold</author>
+      <title>XML in a Nutshell, Third Edition</title>
+      <genre>Computer</genre>
+      <price>44.99</price>
+      <publish_date>2004-09-01</publish_date>
+      <description>If you're a developer working with XML, you know there's a lot to know about XML, and the XML space is evolving almost moment by moment. But you don't need to commit every XML syntax, API, or XSLT transformation to memory; you only need to know where to find it. And if it's a detail that has to do with XML or its companion standards, you'll find it--clear, concise, useful, and well-organized--in the updated third edition of XML in a Nutshell</description>
+   </book>
+</catalog>
