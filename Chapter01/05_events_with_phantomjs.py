@@ -1,7 +1,10 @@
 from selenium import webdriver
 
+
 def get_upcoming_events(url):
-    driver = webdriver.PhantomJS('phantomjs')
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    driver = webdriver.Chrome(options=options)
     driver.get(url)
 
     events = driver.find_elements_by_xpath('//ul[contains(@class, "list-recent-events")]/li')
@@ -14,5 +17,6 @@ def get_upcoming_events(url):
         print(event_details)
 
     driver.close()
+
 
 get_upcoming_events('https://www.python.org/events/python-events/')
